@@ -46,7 +46,7 @@ breeze-plymouth \
 brightnessctl \
 btop \
 clang \
-cmake 
+cmake \
 discord \
 firefox \
 fzf \
