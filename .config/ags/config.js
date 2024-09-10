@@ -13,7 +13,6 @@ App.config({
         Bar(0),
         applauncher,
         logout,
-        //quick_menu,
         menu,
         stats
     ],
