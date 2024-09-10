@@ -13,6 +13,10 @@ export const battery = Variable("", {
     poll: [1000, App.configDir + '/scripts/battery.sh']
 })
 
+export const wifi = Variable("", {
+    poll: [5000, App.configDir + '/scripts/wifi.sh']
+})
+
 const stat = (stat_name, stat_value, class_name) => {
     return Widget.Box({
         vertical: false,
@@ -40,6 +44,7 @@ const stats_box = Widget.Box({
         stat("Brightness:", brightness.bind(), "stat-bright"),
         stat("Volume:", volume.bind(), "stat-volume"),
         stat("Battery:", battery.bind(), "stat-battery"),
+        stat("WiFi:", wifi.bind(), "stat-wifi"),
     ]
 })
 

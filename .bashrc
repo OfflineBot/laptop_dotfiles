@@ -32,11 +32,12 @@ fi
 
 
 # custom env Paths
+export PATH=$PATH:$HOME/Apps
 export PATH=$PATH:$HOME/Apps/Scripts
 export PATH=$PATH:$HOME/.platformio/penv/bin
 
 # dark theme
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Breeze-Dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 # theme
@@ -45,5 +46,5 @@ MY_ARG="\[\033[0;37m\]"
 PS1="${MY_PATH}\w> ${MY_ARG}"
 
 # idk tbh
-. "$HOME/.cargo/env"
-
+#. "$HOME/.cargo/env"
+alias ls='ls --color=auto'
